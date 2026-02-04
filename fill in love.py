@@ -17,7 +17,7 @@ penup()
 # text
 goto(20, -200)
 color("pink")
-write("only s", align="center", font=("Arial", 25, "bold"))
+write("lost my life", align="center", font=("Arial", 25, "bold"))
 
 color("red")
 
