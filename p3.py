@@ -26,4 +26,3 @@ for a in range(1, 11):
 
 for a in range( 10, 0,-1):
     print("value of a:", a)
-
