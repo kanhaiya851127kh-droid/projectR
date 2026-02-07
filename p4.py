@@ -1,4 +1,4 @@
-
+'''
 #even odd
 num = int(input("enter a number ="))
 if num/2 == 0 :
@@ -11,4 +11,10 @@ character = input("enter character =")
 if character in 'aeiouAEUOU':
     print("vowel")
 else:
-    print("consonts")
+    print("consonts")'''
+
+lst =[]
+for i in range (5):
+    n = int(input("enter number "))
+    lst.append(n)
+print(lst)
