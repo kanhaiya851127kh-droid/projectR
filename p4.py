@@ -13,8 +13,8 @@ if character in 'aeiouAEUOU':
 else:
     print("consonts")'''
 
-lst =[]
+list =[]
 for i in range (5):
     n = int(input("enter number "))
-    lst.append(n)
-print(lst)
+    list.append(n)
+print(list)
