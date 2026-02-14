@@ -18,7 +18,7 @@ WHITE = (255, 255, 255)
 
 center_x, center_y = WIDTH // 2, HEIGHT // 2
 
-your_name = " s "   
+your_name = " 19on1l"   
 
 running = True
 t = 0
