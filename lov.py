@@ -2,48 +2,50 @@ import pygame
 import math
 
 pygame.init()
-WIDTH, HEIGHT = 800, 800
+
+WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Love You Heart")
+pygame.display.set_caption("Heart Animation")
 
 clock = pygame.time.Clock()
-font = pygame.font.SysFont("arial", 18, bold=True)
 
 BLACK = (0, 0, 0)
-PINK = (234, 128, 176)
+PINK = (255, 80, 120)
 
-center_x, center_y = WIDTH // 2, HEIGHT // 2
+def heart_points(scale=10):
+    points = []
+    for t in range(0, 360):
+        t = math.radians(t)
+        x = 16 * math.sin(t) ** 3
+        y = (13 * math.cos(t)
+             - 5 * math.cos(2*t)
+             - 2 * math.cos(3*t)
+             - math.cos(4*t))
+        points.append((x * scale, -y * scale))
+    return points
+
+points = heart_points(12)
 
 running = True
-t = 0
+angle = 0
 
 while running:
-    screen.fill(BLACK)
-
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-    # Heart curve using math
-    for i in range(0, 360, 6):
-        angle = math.radians(i + t)
+    screen.fill(BLACK)
 
-        x = 16 * math.sin(angle) ** 3
-        y = (
-            13 * math.cos(angle)
-            - 5 * math.cos(2 * angle)
-            - 2 * math.cos(3 * angle)
-            - math.cos(4 * angle)
-        )
+    rotated = []
+    for x, y in points:
+        xr = x * math.cos(angle) - y * math.sin(angle)
+        yr = x * math.sin(angle) + y * math.cos(angle)
+        rotated.append((xr + WIDTH//2, yr + HEIGHT//2))
 
-        px = center_x + x * 15
-        py = center_y - y * 15
+    pygame.draw.polygon(screen, PINK, rotated)
 
-        text = font.render("love you", True, PINK)
-        screen.blit(text, (px, py))
-
-    t += 1
-    pygame.display.update()
+    angle += 0.02
+    pygame.display.flip()
     clock.tick(60)
 
 pygame.quit()
