@@ -1,4 +1,4 @@
-add = lambda a, b: a + b
+'''add = lambda a, b: a + b
 print(add(6, 4))
 
 def apply(f, x):
@@ -9,7 +9,7 @@ print(apply(lambda n: n*n, 5))
 
 nums = [1,2,3,4]
 res = list(map(lambda x: x*2, nums))
-print(res)
+print(res)'''
 
 
 from functools import reduce
@@ -23,3 +23,11 @@ print(total)
 lst=[[1,2],[3,4]]
 res=list(map(lambda sub:list(map(lambda x:x*2, sub)), lst))
 print(res)
+
+
+def outer():
+    x=5
+    def inner():
+        print(x)
+    inner()
+outer()
