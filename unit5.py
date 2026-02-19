@@ -31,3 +31,8 @@ def outer():
         print(x)
     inner()
 outer()
+
+
+import math
+print(math.pow(2,3))
+print(math.ceil(2.3))
