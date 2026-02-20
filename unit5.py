@@ -36,3 +36,7 @@ outer()
 import math
 print(math.pow(2,3))
 print(math.ceil(2.3))
+
+
+ages=[10,25,-5,40]
+print(list(filter(lambda a:a>0, ages)))
