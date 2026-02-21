@@ -40,3 +40,13 @@ print(math.ceil(2.3))
 
 ages=[10,25,-5,40]
 print(list(filter(lambda a:a>0, ages)))
+
+
+nums=[1,2,3,4,5,6]
+ev=list(filter(lambda x:x%2==0, nums))
+print(ev)
+
+from functools import reduce
+nums=[1,2,3,4]
+s = reduce(lambda a,b:a+b, nums)
+print(s)
