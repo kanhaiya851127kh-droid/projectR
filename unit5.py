@@ -50,3 +50,8 @@ from functools import reduce
 nums=[1,2,3,4]
 s = reduce(lambda a,b:a+b, nums)
 print(s)
+
+
+nums=[1,2,3]
+res=list(map(lambda x:(x, x*x, x*x*x), nums))
+print(res)
