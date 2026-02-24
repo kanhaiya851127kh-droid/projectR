@@ -55,3 +55,7 @@ print(s)
 nums=[1,2,3]
 res=list(map(lambda x:(x, x*x, x*x*x), nums))
 print(res)
+
+
+ages=[10,25,-5,40]
+print(list(filter(lambda a:a>0, ages)))
