@@ -59,3 +59,9 @@ print(res)
 
 ages=[10,25,-5,40]
 print(list(filter(lambda a:a>0, ages)))
+
+
+from functools import reduce
+nums=[1,2,3,4]
+s = reduce(lambda a,b:a+b, nums)
+print(s)
