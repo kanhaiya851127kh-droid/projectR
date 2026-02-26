@@ -65,3 +65,8 @@ from functools import reduce
 nums=[1,2,3,4]
 s = reduce(lambda a,b:a+b, nums)
 print(s)
+
+
+from functools import reduce
+nums=[3,9,4,7]
+print(reduce(lambda a,b: a if a>b else b, nums))
