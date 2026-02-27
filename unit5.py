@@ -70,3 +70,18 @@ print(s)
 from functools import reduce
 nums=[3,9,4,7]
 print(reduce(lambda a,b: a if a>b else b, nums))
+
+
+
+
+from functools import reduce
+
+marks = [35,50,80,20,60]
+
+passed = list(filter(lambda x: x>=40, marks))
+bonus = list(map(lambda x: x+5, passed))
+total = reduce(lambda x,y: x+y, bonus)
+
+print("Passed:", passed)
+print("After Bonus:", bonus)
+print("Total:", total)
