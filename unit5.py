@@ -93,3 +93,12 @@ from functools import reduce
 nums = [10,45,23,67,12]
 maximum = reduce(lambda x,y: x if x>y else y, nums)
 print(maximum)
+
+
+def outer():
+    def inner():
+        return "Hello"
+    return inner
+
+f = outer()
+print(f())
