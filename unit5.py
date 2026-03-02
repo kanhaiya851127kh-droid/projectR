@@ -102,3 +102,15 @@ def outer():
 
 f = outer()
 print(f())
+
+
+
+
+nums = [1,2,3,4,5,6]
+even = list(filter(lambda x: x%2==0, nums))
+print(even)
+
+def apply_func(func, lst):
+    return [func(x) for x in lst]
+
+print(apply_func(lambda x: x+5, [1,2,3]))
