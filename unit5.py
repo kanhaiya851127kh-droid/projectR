@@ -114,3 +114,10 @@ def apply_func(func, lst):
     return [func(x) for x in lst]
 
 print(apply_func(lambda x: x+5, [1,2,3]))
+
+
+
+
+nums = [1,2,3]
+result = list(map(lambda x: (x, x**2, x**3), nums))
+print(result)
