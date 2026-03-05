@@ -1,4 +1,4 @@
-sq = [x*x for x in range(1,11)]
+'''sq = [x*x for x in range(1,11)]
 print(sq)
 
 
@@ -9,3 +9,12 @@ print(v)
 
 d = {x: x**3 for x in range(1,6)}
 print(d)
+'''
+
+
+def fib(n):
+    if n<=1:
+        return n
+    return fib(n-1)+fib(n-2)
+
+print(fib(6))
