@@ -18,3 +18,10 @@ def fib(n):
     return fib(n-1)+fib(n-2)
 
 print(fib(6))
+
+
+
+def student(name, age):
+    print(name, age)
+
+student(age=20, name="Rahul")
