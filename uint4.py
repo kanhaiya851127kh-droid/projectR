@@ -31,3 +31,10 @@ def student(name, age):
     print(name, age)
 
 student(age=20, name="Rahul")
+
+
+
+def country(name="India"):
+    print(name)
+
+country()
