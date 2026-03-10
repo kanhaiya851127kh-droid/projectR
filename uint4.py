@@ -46,3 +46,10 @@ def fib(n):
     return fib(n-1)+fib(n-2)
 
 print(fib(6))
+
+
+def report(*marks, **details):
+    print("Name:", details["name"])
+    print("Total:", sum(marks))
+
+report(80,90,85,name="Kanhaiya")
