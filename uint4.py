@@ -53,3 +53,10 @@ def report(*marks, **details):
     print("Total:", sum(marks))
 
 report(80,90,85,name="Kanhaiya")
+
+
+
+def info(name, age=18, city="Jamshedpur"):
+    print(name, age, city)
+
+info("Kanhaiya", city="Ranchi")
