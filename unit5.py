@@ -291,3 +291,11 @@ total = reduce(lambda x,y: x+y, bonus)
 print("Passed:", passed)
 print("After Bonus:", bonus)
 print("Total:", total)
+
+
+
+lst = [10,20,-5,30,20,40,-2,10]
+
+valid = list(set(filter(lambda x: x>0, lst)))
+
+print(valid)

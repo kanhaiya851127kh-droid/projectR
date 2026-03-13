@@ -60,11 +60,3 @@ def info(name, age=18, city="Jamshedpur"):
     print(name, age, city)
 
 info("Kanhaiya", city="Ranchi")
-
-
-
-lst = [10,20,-5,30,20,40,-2,10]
-
-valid = list(set(filter(lambda x: x>0, lst)))
-
-print(valid)
