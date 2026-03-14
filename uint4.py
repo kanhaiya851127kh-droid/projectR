@@ -38,7 +38,7 @@ def country(name="India"):
     print(name)
 
 country()
-'''
+
 
 def fib(n):
     if n<=1:
@@ -59,4 +59,25 @@ report(80,90,85,name="Kanhaiya")
 def info(name, age=18, city="Jamshedpur"):
     print(name, age, city)
 
-info("Kanhaiya", city="Ranchi")
+info("Kanhaiya", city="Ranchi")'''
+
+
+
+def add(a, b):
+    return a + b
+
+print(add(3, 4))
+
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    
+    return True
+
+
+print(is_prime(7))
