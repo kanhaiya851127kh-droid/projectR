@@ -9,7 +9,7 @@ print(apply(lambda n: n*n, 5))
 
 nums = [1,2,3,4]
 res = list(map(lambda x: x*2, nums))
-print(res)'''
+print(res)
 
 
 from functools import reduce
@@ -299,3 +299,55 @@ lst = [10,20,-5,30,20,40,-2,10]
 valid = list(set(filter(lambda x: x>0, lst)))
 
 print(valid)
+
+
+add = lambda a,b : a+b  
+print(add(5,3 ))
+
+
+
+def operate (fun ,x):
+    return fun (x)
+
+def square(n):
+    return n*n 
+print(operate(square,5))
+
+
+lst = [1,2,3,4]
+result =list(map(lambda x : x*2,lst))
+print(result)
+
+lst =[1,2,3,4]
+sq =list (map(lambda x: x**2,lst))
+print(sq)  
+
+lst =[1,2,3,4,5,6]
+odd =list(filter(lambda x : x%2!=0,lst))
+print(odd)
+
+from functools import reduce
+nums =[1,2,3,4,5]
+product =reduce(lambda a,b : a*b, nums)
+print(product)
+
+
+words =["apple","banana","grapefruit","kiwi","orange"]
+long_words =list(filter(lambda w :len(w)>5,words))
+print(long_words)
+
+
+from functools import reduce
+words =["python","is","easy"]
+sentence =reduce(lambda a,b:a+ " "+b , words)
+print(sentence)'''
+
+lst =[10,20,-5,30,20,40,-2,10]
+valid =list(set(filter(lambda x :x>0,lst)))
+print(valid)
+
+
+from functools import reduce
+num =[5,12,8,20,3]
+maximum =reduce(lambda a,b:a if a>b else b,num)
+print(maximum)
