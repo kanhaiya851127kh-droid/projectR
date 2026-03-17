@@ -1,4 +1,4 @@
-'''sq = [x*x for x in range(1,11)]
+sq = [x*x for x in range(1,11)]
 print(sq)
 
 
@@ -59,7 +59,7 @@ report(80,90,85,name="Kanhaiya")
 def info(name, age=18, city="Jamshedpur"):
     print(name, age, city)
 
-info("Kanhaiya", city="Ranchi")'''
+info("Kanhaiya", city="Ranchi")
 
 
 
