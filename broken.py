@@ -1,5 +1,6 @@
 import time
 from colorama import Fore, Style, init
+import random
 
 init(autoreset=True)
 
@@ -21,25 +22,28 @@ def typing(name="GF"):
     print(Fore.YELLOW + f"{name} is typing...")
     time.sleep(2)
 
-# Chat start
-send_message("You", "Hii ", Fore.CYAN)
+# simple GF replies
+gf_replies = ["hi 🙂", "kya kar rahe ho?", "hmm...", "to ky ❤️", "busy hu"]
 
-seen()
+# chat loop
+while True:
+    user_msg = input("You: ")
+    
+    if user_msg.lower() == "bye":
+        send_message("GF", "Bye 🙂", Fore.MAGENTA)
+        break
 
-typing("GF")
+    send_message("You", user_msg, Fore.CYAN)
 
-send_message("GF", "hi 🙂", Fore.MAGENTA)
+    seen()
+    typing("GF")
 
-send_message("You", "Miss you ❤️", Fore.CYAN)
+    # random reply
+    reply = random.choice(gf_replies)
+    send_message("GF", reply, Fore.MAGENTA)
 
-seen()
-
-typing("GF")
-
-send_message("GF", "show what ...", Fore.MAGENTA)
-
-time.sleep(0.25)
-
-typing("GF")
-
-send_message("GF", "🚫 You are blocked.", Fore.RED)
+    # prank block condition 😅
+    if "miss you" in user_msg.lower():
+        typing("GF")
+        send_message("GF", "🚫 You are blocked.", Fore.RED)
+        break
