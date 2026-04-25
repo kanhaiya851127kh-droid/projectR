@@ -47,3 +47,8 @@ while True:
         typing("GF")
         send_message("GF", "🚫 You are blocked.", Fore.RED)
         break
+
+
+##kugubtuuggu6fo
+
+  
