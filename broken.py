@@ -23,7 +23,7 @@ def typing(name="GF"):
     time.sleep(2)
 
 # simple GF replies
-gf_replies = ["hi 🙂", "kya kar rahe ho?", "hmm...", "to ky ❤️", "busy hu"]
+gf_replies = ["hi 🙂", " so what?", "hmm...", "to ky ❤️", "busy hu"]
 
 # chat loop
 while True:
@@ -46,9 +46,4 @@ while True:
     if "miss you" in user_msg.lower():
         typing("GF")
         send_message("GF", "🚫 You are blocked.", Fore.RED)
-        break
-
-
-##kugubtuuggu6fo
-
-  
+        break  
