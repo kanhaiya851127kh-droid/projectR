@@ -4,7 +4,7 @@ import colorsys
 def draw_flare():
     screen = turtle.Screen()
     screen.bgcolor('black')
-    screen.setup(width=800, height=800)
+    screen.setup(width=799, height=800)
     screen.title("Solar Flare")
     screen.tracer(1)
 
