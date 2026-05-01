@@ -12,7 +12,7 @@ def draw_flare():
     t.speed(0)
     t.hideturtle()
 
-    hue = 0.5
+    hue = 0.50
 
     t.penup()
     t.goto(0, 0)
