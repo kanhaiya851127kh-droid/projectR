@@ -23,7 +23,7 @@ def typing(name="GF"):
     time.sleep(2)
 
 # simple GF replies
-gf_replies = ["hi 🙂", " so what?", "hmm...", "to ky ❤️", "busy hu"]
+gf_replies = [" ha ", " so what?", "hmm...", "to ky ", "busy hu"]
 
 # chat loop
 while True:
