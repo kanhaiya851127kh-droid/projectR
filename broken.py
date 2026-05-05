@@ -22,7 +22,7 @@ def typing(name="GF"):
     print(Fore.YELLOW + f"{name} is typing...")
     time.sleep(2)
 
-# simple GF replies hit 
+# simple GF replies
 gf_replies = [" ha ", " so what?", "sorry yaar ", "to ky ", "busy hu"]
 
 # chat loop
