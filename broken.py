@@ -22,10 +22,10 @@ def typing(name="GF"):
     print(Fore.YELLOW + f"{name} is typing...")
     time.sleep(2)
 
-# simple GF replies
+# simple GF 
 gf_replies = [" ha ", " so what?", "sorry yaar ", "to ky ", "busy hu"]
 
-# chat loop
+# chat loop hd
 while True:
     user_msg = input("You: ")
     
@@ -38,7 +38,7 @@ while True:
     seen()
     typing("GF")
 
-    # random reply
+    # random reply for life
     reply = random.choice(gf_replies)
     send_message("GF", reply, Fore.MAGENTA)
 
