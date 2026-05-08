@@ -42,7 +42,7 @@ while True:
     reply = random.choice(gf_replies)
     send_message("GF", reply, Fore.MAGENTA)
 
-    # prank block condition 
+    # block condition 
     if "miss you" in user_msg.lower():
         typing("GF")
         send_message("GF", "🚫 You are blocked.", Fore.RED)
