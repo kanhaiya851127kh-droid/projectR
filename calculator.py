@@ -1,3 +1,4 @@
+#exepraction
 def add(a, b):
     return a + b
 
@@ -19,7 +20,7 @@ def modulus(a, b):
     if b == 0:
         return "Error! Modulus by zero."
     return a % b
-
+#opction
 
 while True:
     print("\n===== Advanced Calculator =====")
@@ -32,6 +33,8 @@ while True:
     print("7. Exit")
 
     choice = input("Choose operation (1-7): ")
+
+#user choice
 
     if choice == '7':
         print("Thank you for using calculator 😊")
