@@ -1,7 +1,6 @@
 import pygame
 import sys
 
-# Pygame start
 pygame.init()
 
 # Screen size
@@ -16,7 +15,7 @@ PINK = (255, 105, 180)
 font = pygame.font.SysFont("Arial", 40)
 
 # Message
-text = font.render("Py, tum meri smile ka reason ho ❤️", True, PINK)
+text = font.render(" tum meri smile ka reason ho ❤️", True, PINK)
 
 # Main loop
 while True:
