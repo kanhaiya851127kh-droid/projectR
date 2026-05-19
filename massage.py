@@ -17,7 +17,6 @@ font = pygame.font.SysFont("Arial", 40)
 # Message
 text = font.render(" tum meri smile ka reason ho ❤️", True, PINK)
 
-# Main loop
 while True:
     screen.fill(BLACK)
 
