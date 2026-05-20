@@ -52,7 +52,7 @@ while running:
 
     # blinking text
     if (pygame.time.get_ticks() // 500) % 2 == 0:
-        text = font.render("love you 19on1l", True, (255, 255, 255))
+        text = font.render("love you ", True, (255, 255, 255))
         rect = text.get_rect(center=(WIDTH//2, HEIGHT//2))
         screen.blit(text, rect)
 

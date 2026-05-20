@@ -16,7 +16,7 @@ WHITE = (255, 255, 255)
 
 center_x, center_y = WIDTH // 2, HEIGHT // 2
 
-text_surface = font.render("lost my love", True, WHITE)
+text_surface = font.render("simran", True, WHITE)
 text_rect = text_surface.get_rect(center=(center_x, center_y))
 
 t = 0
