@@ -38,7 +38,7 @@ while True:
     seen()
     typing("GF")
 
-    # random reply for life
+    
     reply = random.choice(gf_replies)
     send_message("GF", reply, Fore.MAGENTA)
 
