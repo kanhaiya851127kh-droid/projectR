@@ -11,7 +11,7 @@ pygame.display.set_caption("Python Particle Animation")
 clock = pygame.time.Clock()
 font = pygame.font.SysFont("arial", 40, bold=True)
 
-# ---------------- PARTICLE CLASS ----------------
+# ---------------- PARTICLE CLASS ----------
 class Particle:
     def __init__(self):
         self.x = random.randint(0, WIDTH)
@@ -31,7 +31,7 @@ class Particle:
             self.size
         )
 
-# ---------------- MAIN LOOP ----------------
+# --------- MAIN LOOP ----------------
 particles = []
 running = True
 
