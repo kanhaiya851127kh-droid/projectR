@@ -13,7 +13,7 @@ lyrics = [
     "💝 Kaisi Bhasha Mai Bhasha Mai Hai Likha..."
 ]
 
-delays = [0.6, 0.6, 0.9, 2.9, 1.4, 1.4, 2.7, 1.0, 2.4, 8.3]
+delays = [0.5, 0.5, 0.8, 2.8, 1.4, 1.4, 2.7, 1.0, 2.4, 8.3]
 
 def type_line(line):
     for char in line:
