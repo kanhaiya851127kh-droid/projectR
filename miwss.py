@@ -35,3 +35,6 @@ def draw_flare():
     turtle.done()
 
 draw_flare()
+
+
+yuls
