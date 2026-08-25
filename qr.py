@@ -1,9 +1,3 @@
-#include "qr_link.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <qrencode.h>  // sudo apt install libqrencode-dev
-
 int generate_qr(const char *text, const char *output_file) {
     QRcode *qr = QRcode_encodeString(text, 0, QR_ECLEVEL_L, QR_MODE_8, 1);
     if (!qr) {
@@ -19,3 +13,5 @@ int generate_qr(const char *text, const char *output_file) {
         return 1;
     }
     
+    unsigned char *image = qr->data;
+    int size = qr->width;
