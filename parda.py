@@ -22,13 +22,3 @@ int open_link(const char *url) {
         printf("Failed to open browser. Please open manually: %s\n", url);
     }
 
-    
-    snprintf(command, sizeof(command), "open \"%s\"", url);
-    system(command);
-#else
-    char command[512];
-    snprintf(command, sizeof(command), "xdg-open \"%s\" 2>/dev/null || sensible-browser \"%s\"", url, url);
-    int result = system(command);
-    if (result != 0) {
-        printf("Failed to open browser. Please open manually: %s\n", url);
-    }
