@@ -357,8 +357,6 @@ while True:
                         logged_in = False
                         message = "Logged out."
 
-scoler midea .pbc .shib
-
-
-
-mean heart . love 964 kmn
+Remove Follower.
+Type the username.
+Press Enter.
