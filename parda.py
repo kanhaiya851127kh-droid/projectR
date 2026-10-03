@@ -356,7 +356,3 @@ while True:
                     elif key == "5":
                         logged_in = False
                         message = "Logged out."
-
-Remove Follower.
-Type the username.
-Press Enter.
