@@ -358,18 +358,3 @@ while True:
                         message = "Logged out."
 
 
-
-                        comatozze comatozze comatozze comatozze comatozze 
-                        comatozze 
-                        comatozze 
-                        comatozze 
-                        comatozze 
-
-                        comatozze 
-                        comatozze 
-
-
-
-
-                        
-                        comatozze 
